@@ -93,6 +93,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* purple - #453e4f, pink - #f19494, cream - #ffe8d6, pale blue - #e8eff7, mustard - #e9b14c */
+
 /* General Styles === Mobile first */
 
 html {
@@ -101,69 +103,369 @@ html {
 
 body {
   font-family: 'Karla', sans-serif;
-
-}
-
-header {
-  
-}
-
-nav {
-  font-size: 1.25em;
   margin: 0;
+  background: #ffe8d6;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+/* header */
+
+.content-wrapper {
+  background-color: #453e4f;
+  margin: 0;
+  padding: 75px;
 }
 
-ul li {
-  font-weight: 100;
-}
-
-li a {
-  text-decoration: none;
+div .name-band {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
-  font-size: 4em;
-  font-family: 'Prata', serif;
+  color: #e9b14c; 
+  font-size: 3.5em;
+  font-family: 'Domine', serif;
+  letter-spacing: .08em;
+  padding-bottom: .2em;
+  text-align: center;
+}
+
+h1 span {
+  color: #e9b14c;
+  font-family: 'Karla', sans-serif;
+  /* font-family: 'Domine', serif;  */
+  font-weight: 100;
+  font-size: .6em;
+  letter-spacing: 0.02em;
 }
 
 h2 {
-  font-size: 2.25em;
-  font-weight: 100;
-}
-
-h2 span {
-  font-weight: 400;
-}
-
-h3 {
-  font-weight: 100;
-  font-size: 3em;
-}
-
-h4 {
+  font-weight: 200;
   font-size: 2em;
+  color: #ffe8d6; 
+  /* font-family: 'Domine', serif; */
+  font-family: 'Karla', sans-serif;
+  padding-top: 1.5em;
+  padding-bottom: 1.25em;
+  text-align: center;
+}
+
+/* navigation */
+
+nav {
+  background-color: #e9b14c;
+  padding: .6em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+}
+
+nav ul li {
+  font-weight: 300;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #453e4f; 
+}
+
+/* The sticky class - add JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* high value for z-index below allows sticky nav to move over/stack on top of other content */
+  z-index: 9999;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* sections */
+
+section {
+  text-decoration: none;
 }
 
 p {
-  font-weight: ;
+  font-weight: 400;
 }
 
-p span {
-  
+/* portfolio section */
+
+.project-wrapper {
+  margin: 30px 40px 20px 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-img {
-  
+.portfolio-piece {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 98%;
+}
+
+h3 {
+  color: #453e4f;
+  font-weight: 100;
+  font-size: 2em;
+  font-family: 'Domine', serif;
+  padding-top: 0;
+  margin-top: 40px;
+  text-align: center;
+}
+
+h4 {
+  color: #453e4f;
+  font-family: 'Domine', serif;
+  font-size: 1.5em;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: .2em;
+}
+
+figure {
+  filter: drop-shadow(1px 2px 6px lightgrey);
+}
+
+section p {
+  color: #453e4f;
+}
+
+/* buttons */
+
+.button-52 {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 10px 17px 10px;
+  outline: 0;
+  border: 1px solid #453e4f;;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: white;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+/* skills section */
+
+.skills {
+  background-color: #e9b14c;
+  padding: 5px;
+}
+
+section h3 {
+  margin-bottom: 0;
+}
+
+.skills ul {
+  background: #e9b14c;
+  color: #453e4f;
+  padding: 0 1em 2em 1em;
+  line-height: 2.5em;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.skills ul li {
+  padding-inline-start: 1px;
+  padding-inline-end: 10px;
+  margin-inline-start: 10px;
+}
+
+#additional {
+  color: #453e4f;
+  line-height: 2em;
+  padding: 0 60px;
+  margin-bottom: 50px;
+}
+
+/* about section */
+
+.about-section {
+  background-color: #F19494;
+  padding: 0;
+  padding-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img #portrait {
+  padding: 0;
+  margin: 0;
+  width:auto;
+}
+
+.about-section h4 {
+  font-family: 'Karla', sans-serif;
+  font-weight: 300;
+  text-align: left;
+  margin: 40px 60px 20px 60px;
+}
+
+.about-section p {
+  margin: 10px 60px 20px 60px;
+
+}
+
+/* footer */ 
+
+footer .content-wrapper {
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+footer .content {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content h3, h4 {
+  color: #453e4f;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+footer .connect {
+  color: #ffe8d6;
+}
+
+footer .contact {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.social-linkedin { 
+  margin: 0;
+  padding: 0;
+}
+
+address a:link {
+  color: #e9b14c;
+  text-decoration: none;
+}
+
+address a:hover {
+  text-decoration: none;
+}
+
+address a:visited {
+  text-decoration: none;
+}
+
+address a:active {
+  text-decoration: none;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* .social-icons .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 2.75em;
+  width: 2.75em;
+  background-color: #e9b14c;
+}
+ */
+footer .social-icons i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3125em;
+  line-height: 1.25em;
+  color: #ffe8d6;
+}
+
+.contact p {
+  color: #e9b14c;
+  /* font-family: 'Domine', serif; */
+  font-family: 'Karla', sans-serif;
+
+  font-size: 1.5em;
+  letter-spacing: .05em;
+  text-align: center;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright p {
+  color: #453e4f;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.75em;
 }
 
 
+/* TABLET */
 
-
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
 
 
 /* ==========================================================================

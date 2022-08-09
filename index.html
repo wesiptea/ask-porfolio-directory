@@ -28,133 +28,141 @@
   <meta name="theme-color" content="#fafafa">
 
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- icons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- Unicons by <a href="https://iconscout.com/">IconScout</a> -->
+  <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
 </head>
 
 <!-- page content -->
 
 <body>
-  <div class="content-wrapper" aria-label="welcome">
-    <header>
 
-      <section aria-label="introduction to Anne">
-        <h1>Anne<br><span>Spitler-Kashuba</span></h1>
-        <h2>a frontend developer <br>
-          <span>accessibility<br>
-            &amp; great design.</span>
+  <header class="header-color">
+
+    <div class="sticky" aria-label="navigation">
+      <nav>
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content-wrapper" aria-label="welcome">
+
+      <div class="name-band">
+        <h1>anne.sk<br><span>frontend developer</span></h1>
+        <h2>accessibility<br>
+          &amp; design-focused
         </h2>
-      </section>
+      </div>
+    </div>
 
-      <section aria-label="navigation">
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skillset">Skillset</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </section>
+  </header>
 
-    </header>
-  </div>
-  <!-- end of header content wrapper -->
+  <section class="projects-color" aria-label="recent projects">
+    <!-- project section with links to live sites -->
+    <div class="project-wrapper">
 
-  <main>
-    <article>
-      <section class="work" aria-label="recent projects">
-        <!-- project section with links to live sites -->
-        <h3 class="portfolio-title">Projects</h3>
-        <div class="project-wrapper">
+      <h3>Portfolio</h3>
 
-          <div class="portfolio-piece">
-            <figure>
-              <a href="" target="_blank">
-                <img src="img/sticky-app.png" alt="Sticky Note App">
-              </a>
-            </figure>
-            <h4>Sticky Note App</h4>
-            <p>An interactive note-taking application that lets users create, edit, and save or delete notes “sticky
-              notes” over time.</p>
-            <p>Built with React, JSX, and Components, including managing data flow and manimulating the DOM.</p>
-            <p>Tools: CodeSandBox.
-            </p>
-            <button></button>
-          </div>
+      <div class="portfolio-piece">
+        <figure>
+          <a href="" target="_blank">
+            <img src="img/sticky-app.png" alt="Sticky Note App">
+          </a>
+        </figure>
+        <h4>Sticky Note App</h4>
+        <p>An interactive note-taking application that lets users create, edit, and save or delete notes “sticky
+          notes” over time.</p>
+        <p>Built with React, JSX, and Components, including managing data flow and manimulating the DOM.</p>
+        <p>Tools: CodeSandBox.
+        </p>
+        <button class="button-52" role="button">Live Page</button>
+      </div>
 
-          <div class="portfolio-piece">
-            <figure>
-              <a href="https://wesiptea.github.io/guess-the-word/
+      <div class="portfolio-piece">
+        <figure>
+          <a href="https://wesiptea.github.io/guess-the-word/
               ">
-                <img src="img/guess-word.png" alt="Guess the Word Game">
-              </a>
-            </figure>
-            <h4>Guess the Word Game</h4>
-            <p>A word guessing game in which a user needs to guess the correct letters before their guesses run out and
-              the game ends!
-            </p>
-            <p>Built in JavaScript including manipulating the DOM and pulling data from APIs.</p>
-            <p>Tools: GitHub.</p>
-            <button></button>
-          </div>
+            <img src="img/guess-word.png" alt="Guess the Word Game">
+          </a>
+        </figure>
+        <h4>Guess the Word Game</h4>
+        <p>A word guessing game in which a user needs to guess the correct letters before their guesses run out
+          and
+          the game ends!
+        </p>
+        <p>Built in JavaScript including manipulating the DOM and pulling data from APIs.</p>
+        <p>Tools: GitHub.</p>
+        <button class="button-52" role="button">Live Page</button>
+      </div>
 
-          <div class="portfolio-piece">
-            <figure>
-              <a href="https://wesiptea.github.io/github-repo-gallery/" target="_blank">
-                <img src="img/github-gallery.png" alt="GitHub Repository Gallery">
-              </a>
-            </figure>
-            <h4>GitHub Repo Gallery</h4>
-            <p>A searchable gallery of repositories stored on GitHub. Visitors can click to view repo details and code.
-            </p>
-            <p>Built using JavaScript, including manipulation of the DOM, and GitHub's API to pull data from my
-              portfolio on GitHub and create a searchable gallery.</p>
-            <p>Tools: Git and GitHub</p>
-            <button></button>
-          </div>
+      <div class="portfolio-piece">
+        <figure>
+          <a href="https://wesiptea.github.io/github-repo-gallery/" target="_blank">
+            <img src="img/github-gallery.png" alt="GitHub Repository Gallery">
+          </a>
+        </figure>
+        <h4>GitHub Repo Gallery</h4>
+        <p>A searchable gallery of repositories stored on GitHub. Visitors can click to view repo details and
+          code.
+        </p>
+        <p>Built using JavaScript, including manipulation of the DOM, and GitHub's API to pull data from my
+          portfolio on GitHub and create a searchable gallery.</p>
+        <p>Tools: Git and GitHub</p>
+        <button class="button-52" role="button">Live Page</button>
+      </div>
 
-          <div class="portfolio-piece">
-            <figure>
-              <a href="https://wesiptea.github.io/unplugged-retreat-updated/" target="_blank">
-                <img src="img/unplugged-img.png" alt="unplugged retreats website">
-              </a>
-            </figure>
-            <h4>Unplugged Retreats</h4>
-            <p>A multi-page responsive website</p>
-            <p>Built with HTML5, CSS3 (including Flexbox), Responsive Media Queries and
-              Typography.</p>
-            <p>Tools: Photoshop design comp, Chrome DevTools, GitHub Pages</p>
-            <button></button>
-          </div>
+      <div class="portfolio-piece">
+        <figure>
+          <a href="https://wesiptea.github.io/unplugged-retreat-updated/" target="_blank">
+            <img src="img/unplugged-img.png" alt="unplugged retreats website">
+          </a>
+        </figure>
+        <h4>Unplugged Retreats</h4>
+        <p>A multi-page responsive website developed from a Photoshop design comp.</p>
+        <p>Built with HTML5, CSS3 (including Flexbox), Responsive Media Queries and
+          Typography.</p>
+        <p>Tools: Photoshop design comp, Chrome DevTools, GitHub Pages</p>
+        <button class="button-52" role="button">Live Page</button>
+      </div>
 
-        </div>
-      </section>
-      <!-- end of projects section -->
-    </article>
+    </div>
+  </section>
+  <!-- end of portfolio section -->
 
-    <section class="skillset" alt="my skillset">
-      <!-- additional information about abilities - tech and soft? -->
-      <h3>Skillset</h3>
+
+  <section class="skills-section" alt="my skills">
+    <!-- additional information about abilities - tech and soft? -->
+    <div class="skills" id="skills-background">
+      <h3>Skills</h3>
       <ul>
-        <li>HTML5 | </li>
-        <li>CSS3 |</li>
-        <li>JavaScript |</li>
-        <li>React |</li>
-        <li>Git &amp; GitHub |</li>
-        <li>Command Line |</li>
-        <li>Chrome DevTools |</li>
-        <li>Responsive, Mobile First Design |</li>
-        <li>CodeSandBox |</li>
-        <li>Photoshop |</li>
-        <li>Illustrator |</li>
-        <li>Google Docs |</li>
-        <li>Slack |</li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Git &amp; GitHub</li>
+        <li>Command Line</li>
+        <li>Chrome DevTools</li>
+        <li>Responsive, Mobile First Design</li>
+        <li>CodeSandBox</li>
+        <li>Photoshop</li>
+        <li>Illustrator</li>
+        <li>Google Docs</li>
+        <li>Slack</li>
       </ul>
+    </div>
 
+    <div>
       <h3>Additional Skills</h3>
-      <ul>
+      <ul class="additional-skills" id="additional">
         <li>Client Relations &amp; Helping Clients Reach their Goals</li>
         <li>Collaborative &amp; Creative Problem-Solving</li>
         <li>Working Remotely</li>
@@ -163,88 +171,92 @@
         <li>Program Managment</li>
         <li>Scheduling &amp; Leading Meetings</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <!-- end of skillset -->
+  <!-- end of skillset -->
 
-    <section class="about" aria-label="about">
-      <!-- monochrome image -->
-      <img src="img/portrait-monochrome.png" aria-label="image of Anne">
-      <h3>About</h3>
+  <section class="about-section" aria-label="about">
+    <!-- monochrome image -->
+    <div class="about-container">
+      <img src="img/portrait-500px.png" class="portrait-photo" id="portrait" aria-label="portrait of Anne">
 
-      <h4><span>Hello, my name is Anne Spitler-Kashuba living in the beautiful redwood forest region of Sonoma County,
-          California.</span>I'm a frontend developer.</h4>
+      <h4>Hi, my name is Anne Spitler-Kashuba. I'm a frontend developer living in West Sonoma
+        County, California.</h4>
 
-      <p> I began my professional life in merchandising and logo design. Transitioned to working with children with
-        communication and literacy difficulties as speech-language pathologist. Now, I am glad to be bringing all of my
-        knowledge and experiences to building websites and helping organizations communicate with their community.</p>
       <p>
-        My aim is to help teams create and maintain websites that are
+        I want to help teams create and maintain websites that are
         well-crafted from the inside out. Clear,
         responsive code behind the scenes &amp;
         accessible content onscreen.</p>
       <p>
         I am looking for a diverse team whose members enjoy the creative process, appreciate how differing approaches
-        and perspectives can make projects even stronger, and value knowledge-sharing and life-long learning.
+        and perspectives make outcomes stronger, and value knowledge-sharing and life-long learning.
       </p>
       <p>
         I bring a diverse set of abilities developed while working in the healthcare and education settings, combined
         with a life-long passion for
-        the arts and making.</p>
+        the arts and making things.</p>
       <p>
         My jam: making and enjoying tasty food, learning languages, collecting textiles,
         and making art.</p>
 
-      <p>Personal goal: visiting as many fantastic bakeries as possible around the world. (If you have bakery
-        recommendations
-        to share, please do!)</p>
-    </section>
-    <!-- end of about section -->
-  </main>
+      <p>Personal goal: visiting as many fantastic bakeries as possible around the world.<br>
+        (Bakery recommendations
+        are welcome!)</p>
+    </div>
+  </section>
+  <!-- end of about section -->
 
   <footer class="contact" aria-label="contact">
     <!-- footer with contact info and icon links -->
     <!-- contact links: email, phone, twitter, github, LinkedIn) -->
     <div class="content-wrapper">
       <div class="footer-content">
-        <h3>Let's Connect</h3>
+        <h3 class="connect">Let's Connect</h3>
 
         <div class="contact">
-          <h3>Contact Me</h3>
+          <!-- <p>
+            <img src="img/lightbulb.png" aria-label="Lightbulb Icon By Maxim Kulikov with IconScout"></i>
+          </p> -->
           <address>
             <p>
-              call | text | WhatsApp - 01+916-425-7235<br>
-              anne.sk.dev@gmail.com
+              call | text | WhatsApp<br>
+              01 + 916-425-7235
+            </p>
+            <p>
+              <a href="mailto:anne.sk.slp@gmail.com">anne.sk.dev@gmail.com</a>
             </p>
           </address>
         </div>
 
         <div class="social">
-          <h4>Connect with Me</h4>
 
           <div class="social-icons">
             <p>
-              <a href="https://www.facebook.com/skillcrush" target="_blank">
-                <div class="circle"><i class="fa-brands fa-facebook-f"></i></div>
+              <a href="http://linkedin.com/in/anne-spitler-kashuba-a6a26863" target="_blank">
+                <img src="img/linkedin.png" class="social-linkedin"
+                  aria-label="Linkedin icon by Unicons from icon scount"></i>
               </a>
             </p>
 
             <p>
-              <a href="https://twitter.com/skillcrush" target="_blank">
-                <div class="circle"><i class="fa-brands fa-twitter"></i></div>
+              <a href="http://github.com/wesiptea" target="_blank">
+                <img src="img/github-45px.png" class="social-linkedin"
+                  aria-label="Github icon by Unicons from icon scount"></i>
               </a>
             </p>
 
-            <p>
-              <a href="https://www.instagram.com/skillcrush/" target="_blank">
-                <div class="circle"><i class="fa-brands fa-instagram"></i></div>
-              </a>
-            </p>
           </div>
         </div>
-        <!--end of social div-->
-
+        <!-- end of social section -->
       </div>
+      <!-- end of footer content-wrapper -->
+
+    </div>
+    <!--end of social div-->
+
+    </div>
     </div>
     <!--end of footer content-wrapper-->
 
