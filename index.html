@@ -57,7 +57,9 @@
     <div class="content-wrapper" aria-label="welcome">
 
       <div class="name-band">
-        <h1>anne.sk<br><span>frontend developer</span></h1>
+        <h1>anne.sk</h1>
+        <h2><span>frontend<br> developer</span></h2>
+
         <h2>accessibility<br>
           &amp; design-focused
         </h2>
@@ -66,16 +68,16 @@
 
   </header>
 
-  <section class="projects-color" aria-label="recent projects">
+  <section class="portfolio" id="portfolio" aria-label="portfolio">
     <!-- project section with links to live sites -->
-    <div class="project-wrapper">
+    <h3>Portfolio</h3>
 
-      <h3>Portfolio</h3>
+    <div class="project-wrapper">
 
       <div class="portfolio-piece">
         <figure>
-          <a href="" target="_blank">
-            <img src="img/sticky-app.png" alt="Sticky Note App">
+          <a href="https://e5pmvy.csb.app/" target="_blank">
+            <img src="img/sticky-note-app.png" alt="Sticky Note App">
           </a>
         </figure>
         <h4>Sticky Note App</h4>
@@ -84,6 +86,22 @@
         <p>Built with React, JSX, and Components, including managing data flow and manimulating the DOM.</p>
         <p>Tools: CodeSandBox.
         </p>
+        <button class="button-52" role="button">Live Page</button>
+      </div>
+
+      <div class="portfolio-piece">
+        <figure>
+          <a href="https://wesiptea.github.io/github-repo-gallery/" target="_blank">
+            <img src="img/github-gallery.png" alt="GitHub Repository Gallery">
+          </a>
+        </figure>
+        <h4>GitHub Repo Gallery</h4>
+        <p>A searchable gallery of repositories stored on GitHub. Visitors can click to view repo details and
+          code.
+        </p>
+        <p>Built using JavaScript, including manipulation of the DOM, and GitHub's API to pull data from my
+          portfolio on GitHub and create a searchable gallery.</p>
+        <p>Tools: Git and GitHub</p>
         <button class="button-52" role="button">Live Page</button>
       </div>
 
@@ -106,22 +124,6 @@
 
       <div class="portfolio-piece">
         <figure>
-          <a href="https://wesiptea.github.io/github-repo-gallery/" target="_blank">
-            <img src="img/github-gallery.png" alt="GitHub Repository Gallery">
-          </a>
-        </figure>
-        <h4>GitHub Repo Gallery</h4>
-        <p>A searchable gallery of repositories stored on GitHub. Visitors can click to view repo details and
-          code.
-        </p>
-        <p>Built using JavaScript, including manipulation of the DOM, and GitHub's API to pull data from my
-          portfolio on GitHub and create a searchable gallery.</p>
-        <p>Tools: Git and GitHub</p>
-        <button class="button-52" role="button">Live Page</button>
-      </div>
-
-      <div class="portfolio-piece">
-        <figure>
           <a href="https://wesiptea.github.io/unplugged-retreat-updated/" target="_blank">
             <img src="img/unplugged-img.png" alt="unplugged retreats website">
           </a>
@@ -135,11 +137,12 @@
       </div>
 
     </div>
+    <!-- project wrapper end -->
   </section>
   <!-- end of portfolio section -->
 
 
-  <section class="skills-section" alt="my skills">
+  <section class="skills-section" id="skills" alt="my skills">
     <!-- additional information about abilities - tech and soft? -->
     <div class="skills" id="skills-background">
       <h3>Skills</h3>
@@ -173,14 +176,13 @@
       </ul>
     </div>
   </section>
+  <!-- end of skills -->
 
-  <!-- end of skillset -->
-
-  <section class="about-section" aria-label="about">
+  <section class="about-section" id="about" aria-label="about">
     <!-- monochrome image -->
-    <div class="about-container">
-      <img src="img/portrait-500px.png" class="portrait-photo" id="portrait" aria-label="portrait of Anne">
+    <img src="img/portrait-500px.png" class="portrait-photo" id="portrait" aria-label="portrait of Anne">
 
+    <div class="about-container">
       <h4>Hi, my name is Anne Spitler-Kashuba. I'm a frontend developer living in West Sonoma
         County, California.</h4>
 
@@ -208,7 +210,7 @@
   </section>
   <!-- end of about section -->
 
-  <footer class="contact" aria-label="contact">
+  <footer class="contact" id="contact" aria-label="contact">
     <!-- footer with contact info and icon links -->
     <!-- contact links: email, phone, twitter, github, LinkedIn) -->
     <div class="content-wrapper">
