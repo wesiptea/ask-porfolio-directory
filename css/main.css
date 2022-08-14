@@ -95,7 +95,10 @@ textarea {
 
 /* purple - #453e4f, pink - #f19494, cream - #ffe8d6, pale blue - #e8eff7, mustard - #e9b14c */
 
-/* General Styles === Mobile first */
+
+/* === Mobile === */
+
+/* General Styles */
 
 html {
   font-size: 16px;
@@ -105,6 +108,11 @@ body {
   font-family: 'Karla', sans-serif;
   margin: 0;
   background: #ffe8d6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 /* header */
@@ -127,17 +135,21 @@ h1 {
   font-size: 3.5em;
   font-family: 'Domine', serif;
   letter-spacing: .08em;
-  padding-bottom: .2em;
+  padding-top: .8em;
+  margin-top: 40px;
+  margin-bottom: 0;
   text-align: center;
 }
 
-h1 span {
+h2 span {
   color: #e9b14c;
   font-family: 'Karla', sans-serif;
   /* font-family: 'Domine', serif;  */
-  font-weight: 100;
-  font-size: .6em;
+  font-weight: 300;
+  font-size: 1.15em;
   letter-spacing: 0.02em;
+  line-height: .001em;
+  padding-top: .01em;
 }
 
 h2 {
@@ -146,7 +158,7 @@ h2 {
   color: #ffe8d6; 
   /* font-family: 'Domine', serif; */
   font-family: 'Karla', sans-serif;
-  padding-top: 1.5em;
+  
   padding-bottom: 1.25em;
   text-align: center;
 }
@@ -167,12 +179,21 @@ nav ul {
 }
 
 nav ul li {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 nav li a {
   text-decoration: none;
   color: #453e4f; 
+}
+
+a:hover {
+  color: #ffe8d6;
+  text-shadow:0px 0px 30px #ffe8d6;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 /* The sticky class - add JS when it reaches its scroll position */
@@ -193,6 +214,7 @@ nav li a {
 
 section {
   text-decoration: none;
+  padding: 50px 0 0 0;
 }
 
 p {
@@ -202,16 +224,17 @@ p {
 /* portfolio section */
 
 .project-wrapper {
-  margin: 30px 40px 20px 40px;
+  margin: 50px 40px 20px 40px;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
 }
 
 .portfolio-piece {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: .5em;
+  margin-bottom: 2.95em;
 
   display: flex;
   flex-direction: column;
@@ -226,7 +249,8 @@ h3 {
   font-size: 2em;
   font-family: 'Domine', serif;
   padding-top: 0;
-  margin-top: 40px;
+  margin-top: 50px;
+  margin-bottom: 0px;
   text-align: center;
 }
 
@@ -410,6 +434,10 @@ footer .social-icons {
   align-items: center;
 }
 
+footer .social {
+  padding-bottom: 40px;
+}
+
 footer .social-icons p {
   display: flex;
   justify-content: center;
@@ -417,16 +445,6 @@ footer .social-icons p {
   flex-flow: row wrap;
 }
 
-/* .social-icons .circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  height: 2.75em;
-  width: 2.75em;
-  background-color: #e9b14c;
-}
- */
 footer .social-icons i {
   display: flex;
   justify-content: center;
@@ -458,14 +476,6 @@ footer .social-icons i {
   font-size: 1.2em;
   line-height: 1.75em;
 }
-
-
-/* TABLET */
-
-@media (min-width: 768px) {
-  .button-52 {
-    padding: 13px 50px 13px;
-  }
 
 
 /* ==========================================================================
@@ -556,9 +566,54 @@ footer .social-icons i {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+/* ====== TABLET ====== */
+
+@media (min-width: 768px) {
+
+  /* tablet general styles */
+
+    /* nav section */
+
+    nav ul li {
+      font-weight: 400;
+    }
+  
+    /* portfolio section */
+  
+    .project-wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-flow: row wrap;
+     
+    }
+
+    .portfolio-piece {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+      width: 35%;
+    }
+
+    .portfolio-piece img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+  /* buttons */
+    .button-52 {
+      padding: 13px 50px 13px;
+    }
+
+    /* about section */
+
+    .portrait-photo {
+      float: left;
+      width: 40%;
+    }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
