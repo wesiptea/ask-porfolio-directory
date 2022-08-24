@@ -110,6 +110,7 @@ body {
   background: #ffe8d6;
 }
 
+/* this code makes sure image is conforming to size of screen */
 img {
   max-width: 100%;
   display: block;
@@ -180,6 +181,7 @@ nav ul {
 
 nav ul li {
   font-weight: 400;
+  font-size: 1em;
 }
 
 nav li a {
@@ -219,13 +221,13 @@ section {
 
 p {
   font-weight: 400;
+  padding-left: 5px;
 }
 
 /* portfolio section */
 
 .project-wrapper {
-  margin: 50px 40px 20px 40px;
-
+  margin: 0 40px 20px 50px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -233,14 +235,20 @@ p {
 }
 
 .portfolio-piece {
-  margin-top: .5em;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%), 0 15px 20px rgb(17 24 39 / 20%);
+  margin-top: 8px;
+  margin-bottom: 60px;
+  padding: 25px;
   margin-bottom: 2.95em;
+  height: 440px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 98%;
 }
 
 h3 {
@@ -248,7 +256,7 @@ h3 {
   font-weight: 100;
   font-size: 2em;
   font-family: 'Domine', serif;
-  padding-top: 0;
+  padding-top: 20px;
   margin-top: 50px;
   margin-bottom: 0px;
   text-align: center;
@@ -257,7 +265,7 @@ h3 {
 h4 {
   color: #453e4f;
   font-family: 'Domine', serif;
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: lighter;
   text-align: center;
   margin-top: 1em;
@@ -274,6 +282,30 @@ section p {
 
 /* buttons */
 
+.button-skills {
+  background-color: #ffffff;
+  /* rgba(51, 51, 51, 0.05); */
+  border-radius: 5px;
+  border-width: 0;
+  color: #453e4f;;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Karla', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0 5px 20px;
+  padding: 5px 10px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;  
+}
+
 .button-52 {
   font-family: 'Karla', sans-serif;
   font-size: 16px;
@@ -281,7 +313,8 @@ section p {
   letter-spacing: 1px;
   padding: 10px 17px 10px;
   outline: 0;
-  border: 1px solid #453e4f;;
+  border-radius: 5px;
+  border: 1px solid #453e4f;
   cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
@@ -293,6 +326,7 @@ section p {
 .button-52:after {
   content: "";
   background-color: white;
+  border-radius: 5px;
   width: 100%;
   z-index: -1;
   position: absolute;
@@ -337,6 +371,7 @@ section h3 {
 }
 
 #additional {
+  background-color: #ffe8d6;
   color: #453e4f;
   line-height: 2em;
   padding: 0 60px;
@@ -356,22 +391,22 @@ section h3 {
   align-items: center;
 }
 
-img #portrait {
+#portrait {
+  
   padding: 0;
   margin: 0;
-  width:auto;
+  width: auto;
 }
 
 .about-section h4 {
   font-family: 'Karla', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   text-align: left;
   margin: 40px 60px 20px 60px;
 }
 
 .about-section p {
   margin: 10px 60px 20px 60px;
-
 }
 
 /* footer */ 
@@ -473,7 +508,7 @@ footer .social-icons i {
 .copyright p {
   color: #453e4f;
   font-family: 'Karla', sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.75em;
 }
 
@@ -566,14 +601,13 @@ footer .social-icons i {
    Modify as content requires.
    ========================================================================== */
 
-/* ====== TABLET ====== */
+/* ====== BREAKPOINT - TABLET ====== */
 
 @media (min-width: 768px) {
 
   /* tablet general styles */
 
     /* nav section */
-
     nav ul li {
       font-weight: 400;
     }
@@ -585,7 +619,6 @@ footer .social-icons i {
       justify-content: space-around;
       align-items: flex-start;
       flex-flow: row wrap;
-     
     }
 
     .portfolio-piece {
@@ -593,7 +626,8 @@ footer .social-icons i {
       justify-content: center;
       align-items: center;
       margin: 20px;
-      width: 35%;
+      width: 240px;
+      height: 445px;
     }
 
     .portfolio-piece img {
@@ -608,18 +642,70 @@ footer .social-icons i {
       padding: 13px 50px 13px;
     }
 
+    /* skills section */
+
+    #additional {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-flow: row wrap; 
+      /* padding: 0 2em 1em 2em; */
+      line-height: 2.5em;
+      /* width: 90%; */
+    }
+
     /* about section */
 
-    .portrait-photo {
-      float: left;
-      width: 40%;
+    .about-section {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
     }
+
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      padding-top: 50px;
+    }
+
+    #portrait {
+      width: 35%;
+    }
+
+    /* footer section */
+
+    footer .social-icons {
+      justify-content: center;
+    }
+
+    footer .social-icons a {
+      margin: 0 25px;
+    }
+
+
+
+/* ====== BREAKPOINT - DESKTOP ====== */
+
+@media (min-width: 1200px) {
+
+  /* look at the breakpoint */
+  #portrait {
+    width: 25%;
+  }
+
+  #additional {
+    color: #453e4f;
+    line-height: 2.5em;
+    padding: 0 2em 10em 2em;
+    width: 90%;
+  }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
+}
 }
 
 /* ==========================================================================
