@@ -380,8 +380,11 @@ section h3 {
 
 /* about section */
 
+#about {
+  background: #F19494;
+}
+
 .about-section {
-  background-color: #F19494;
   padding: 0;
   padding-bottom: 40px;
 
@@ -690,14 +693,26 @@ footer .social-icons i {
 
   /* look at the breakpoint */
   #portrait {
-    width: 25%;
+    width: 35%;
   }
 
   #additional {
     color: #453e4f;
     line-height: 2.5em;
-    padding: 0 2em 10em 2em;
+    padding: 0 2em 1em 2em;
     width: 90%;
+  }
+
+  /* about section */
+
+  #about h4 {
+    font-size: 1.75em;
+    width: 60%;
+  }
+
+  .about-section p {
+    font-size: 1.15em;
+    width: 75%;
   }
 
 @media print,
