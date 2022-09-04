@@ -105,7 +105,7 @@ html {
 }
 
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   background: #ffe8d6;
 }
@@ -133,8 +133,9 @@ div .name-band {
 
 h1 {
   color: #e9b14c; 
-  font-size: 3.5em;
-  font-family: 'Domine', serif;
+  font-size: 4.5em;
+  font-family: 'Bellota', cursive;
+  /* font-family: 'Domine', serif; */
   letter-spacing: .08em;
   padding-top: .8em;
   margin-top: 40px;
@@ -144,22 +145,19 @@ h1 {
 
 h2 span {
   color: #e9b14c;
-  font-family: 'Karla', sans-serif;
-  /* font-family: 'Domine', serif;  */
-  font-weight: 300;
-  font-size: 1.15em;
+  font-family: 'Bellota', cursive;
+  font-weight: 400;
+  font-size: 1.8em;
   letter-spacing: 0.02em;
-  line-height: .001em;
+  /* line-height: .05em; */
   padding-top: .01em;
 }
 
 h2 {
   font-weight: 200;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #ffe8d6; 
-  /* font-family: 'Domine', serif; */
-  font-family: 'Karla', sans-serif;
-  
+  font-family: 'Bellota', cursive;
   padding-bottom: 1.25em;
   text-align: center;
 }
@@ -180,6 +178,7 @@ nav ul {
 }
 
 nav ul li {
+  font-family: 'Bellota', cursive;
   font-weight: 400;
   font-size: 1em;
 }
@@ -244,7 +243,7 @@ p {
   margin-bottom: 60px;
   padding: 25px;
   margin-bottom: 2.95em;
-  height: 440px;
+  height: auto;
 
   display: flex;
   flex-direction: column;
@@ -254,9 +253,10 @@ p {
 
 h3 {
   color: #453e4f;
-  font-weight: 100;
-  font-size: 2em;
-  font-family: 'Domine', serif;
+  font-weight: 200;
+  font-size: 2.5em;
+  font-family: 'Bellota', cursive;
+  /* font-family: 'Domine', serif; */
   padding-top: 20px;
   margin-top: 50px;
   margin-bottom: 0px;
@@ -265,8 +265,8 @@ h3 {
 
 h4 {
   color: #453e4f;
-  font-family: 'Domine', serif;
-  font-size: 1.25em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.75em;
   font-weight: lighter;
   text-align: center;
   margin-top: 1em;
@@ -291,7 +291,7 @@ section p {
   color: #453e4f;;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -308,7 +308,7 @@ section p {
 }
 
 .button-52 {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -404,15 +404,16 @@ section h3 {
 }
 
 .about-section h4 {
-  font-family: 'Karla', sans-serif;
-  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.75em;
   font-weight: 400;
   text-align: left;
-  margin: 40px 60px 20px 60px;
+  margin: 40px 50px 20px 50px;
 }
 
 .about-section span {
-  font-family: 'Domine', serif;
+  font-family: 'Bellota', cursive;
+  /* font-family: 'Domine', serif; */
   color: #ffe8d6;
 }
 
@@ -502,9 +503,7 @@ footer .social-icons i {
 
 .contact p {
   color: #e9b14c;
-  /* font-family: 'Domine', serif; */
-  font-family: 'Karla', sans-serif;
-
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   letter-spacing: .05em;
   text-align: center;
@@ -518,7 +517,7 @@ footer .social-icons i {
 
 .copyright p {
   color: #453e4f;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   line-height: 1.75em;
 }
