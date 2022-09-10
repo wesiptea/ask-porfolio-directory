@@ -241,7 +241,7 @@ p {
   box-shadow: 0 4px 8px rgb(0 0 0 / 10%), 0 15px 20px rgb(17 24 39 / 20%);
   margin-top: 8px;
   margin-bottom: 60px;
-  padding: 25px;
+  padding: 25px 25px 35px 25px;
   margin-bottom: 2.95em;
   height: auto;
 
@@ -281,18 +281,18 @@ section p {
   color: #453e4f;
 }
 
-/* buttons */
+/* portfolio skills & buttons */
 
-.button-skills {
+div .portfolio-skills {
   background-color: #ffffff;
   /* rgba(51, 51, 51, 0.05); */
-  border-radius: 5px;
-  border-width: 0;
-  color: #453e4f;;
-  cursor: pointer;
+  border-radius: 8px;
+  border-width: 10px;
+  color: #453e4f;
+  /* cursor: none; */
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: .75em;
   font-weight: 500;
   line-height: 20px;
   list-style: none;
@@ -304,10 +304,11 @@ section p {
   white-space: nowrap;
   user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation;  
+  touch-action: none; 
 }
 
 .button-52 {
+  color: #453e4f;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 200;
@@ -419,6 +420,10 @@ section h3 {
 
 .about-section p {
   margin: 10px 60px 20px 60px;
+}
+
+.about-section p span {
+  font-weight: 600;
 }
 
 /* footer */ 
@@ -619,7 +624,17 @@ footer .social-icons i {
 
     /* nav section */
     nav ul li {
+      font-size: 1.25em;
       font-weight: 400;
+    }
+
+    /* name section */
+    h2 {
+      font-size: 1.95em;
+    }
+  
+    h2 span {
+      font-size: 1.5em;
     }
   
     /* portfolio section */
@@ -719,7 +734,7 @@ footer .social-icons i {
 
   /* about section */
 
-  #about h4 {
+  #about h4 span {
     font-size: 1.25em;
     width: 60%;
   }
